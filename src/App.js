@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { useGetWeatherByCityQuery } from './weatherApiSlice';
-import './App.css'; // Import your CSS file here
+import './App.css'; 
 
 const App = () => {
   const [city, setCity] = useState('');
   const [cityName, setCityName] = useState('');
 
   const { data: weatherData, error, isLoading } = useGetWeatherByCityQuery(cityName, {
-    skip: !cityName, // Skip the query until cityName is set
+    skip: !cityName, 
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setCityName(city); // Trigger the query with the city input
+    setCityName(city); 
   };
 
   return (

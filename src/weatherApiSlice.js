@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const apiKey = '1b269eaf9d780cd33379c42fe6635dfa'; // Replace with your OpenWeatherMap API key
+const apiKey = '1b269eaf9d780cd33379c42fe6635dfa'; 
 
 export const weatherApi = createApi({
   reducerPath: 'weatherApi',
